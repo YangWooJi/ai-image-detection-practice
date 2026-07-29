@@ -4,8 +4,8 @@ import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-fm.fontManager.addfont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
-plt.rcParams['font.family'] = 'Noto Sans CJK JP'
+# (윈도우는 폰트 파일 경로 지정 불필요)
+plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False
 
 fig, ax = plt.subplots(figsize=(9, 12))

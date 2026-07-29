@@ -11,8 +11,8 @@ matplotlib.use("Agg")
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
-fm.fontManager.addfont('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
-plt.rcParams['font.family'] = 'Noto Sans CJK JP'
+# (윈도우는 폰트 파일 경로 지정 불필요)
+plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False
 
 SIZE = 256
@@ -58,7 +58,7 @@ def fft_ifft(img):
     return magnitude, img_back, recon_error
 
 if __name__ == "__main__":
-    outdir = "/sessions/awesome-dazzling-mccarthy/mnt/outputs/practice"
+    outdir = "."
     imgs = make_images()
 
     fig, axes = plt.subplots(len(imgs), 3, figsize=(12, 4*len(imgs)))
