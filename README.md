@@ -18,6 +18,17 @@
 - `brisque_test.py` — BRISQUE 6종 이미지 테스트 스크립트
 - `brisque_images/` — BRISQUE 테스트에 사용한 6종 이미지 (출처는 아래 표 참고)
 
+### 심화 실습 (FFT 개념 보강)
+
+- `concept1_freq.png` ~ `concept5_reciprocal.png` — 주파수, 대칭성, sinc 함수, 십자 패턴, 역수 관계 등 FFT 핵심 개념을 하나씩 시각화한 설명 이미지 5종
+- `fft_concept_walkthrough.py` — 1D FFT(사인파 합성 신호 역추적) → 2D FFT(줄무늬 격자에 방향 개념 추가) 확장 데모 스크립트
+- `fft_1d_demo.png` / `fft_2d_demo.png` — 위 스크립트의 1D / 2D 데모 결과 이미지
+- `fft_diamond_test.py` / `fft_diamond_test.png` — 정사각형 꼭짓점(축 정렬, 분리 가능) vs 마름모(45도 회전, 분리 불가능) 스펙트럼 비교
+- `fft_filled_box.py` / `fft_filled_box.png` — 테두리만이 아닌 실제로 채워진 정사각형(box 함수)의 2D FFT 스펙트럼
+- `fft_circle_test.py` — 원(회전 대칭 신호) 테스트 스크립트, 결과 이미지는 `concepts/fft_circle_test.png`
+- `fft_diagonal_noise_test.py` — 대각선 / 완전 무작위 노이즈 테스트 스크립트, 결과 이미지는 `concepts/fft_diagonal_noise_test.png`
+- `fft_ifft_error.png` — `fft_ifft.py`의 4개 케이스(점/정사각형/직사각형/사인그래프) 복원 오차를 막대그래프로 비교 (모두 1e-16 수준)
+
 ## BRISQUE 테스트 결과
 
 `pip install brisque`(내부적으로 opencv-contrib 기반)로 6종 이미지의 BRISQUE 점수를 계산했다.
